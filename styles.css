@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.color {
+  height: 50vh;
+  width: 80%;
+  color: hsl(293, 100%, 63%);
+  border: hsl(293, 100%, 63%);
+  background: linear-gradient(
+    to bottom,
+    hsl(293, 70%, 63%) 0%,
+    hsl(264, 80%, 61%) 40%,
+    hsl(264, 80%, 61%) 100%
+  );
+  border-radius: 0px 0px 200px 150px;
+  position: relative;
+  transform: translateX(-100px);
+
+  /* for desktop i'll change the height and width to 80 and 30 respectively */
+  /* on large screen id have to change the transform */
+}
+
+.mobilePhone {
+  /* height: 50vh; */
+  max-width: 60%;
+  border-radius: 10px 10px 10px 10px;
+  background: hsl(0, 0%, 100%);
+}
+
+.profile {
+  background: linear-gradient(
+    to left,
+    hsl(293, 60%, 63%) 20%,
+    hsl(264, 70%, 61%) 40%,
+    hsl(264, 70%, 61%) 100%
+  );
+  border-radius: 20px 20px 5px 5px;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+}
+
+/* .design {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    top:-10px;
+    left: 32.5px;
+} */
+
+.flexprofile {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.backProfileName i {
+  color: white;
+  font-size: 10px;
+}
+
+.imgContainer {
+  padding: 1px;
+  width: 20%;
+  height: 40%;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu i {
+  color: white;
+  font-size: 10px;
+}
+
+.backProfileName {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+
+.nameStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 10px;
+  font-weight: bold;
+  color: hsl(270, 20%, 96%);
+}
+
+.status {
+  font-size: 7px;
+  font-weight: bold;
+  color: hsl(206, 6%, 79%);
+}
+
+.message {
+  padding: 10px 10px 10px 10px;
+  background: hsl(270, 20%, 96%);
+}
+
+.entrepreneur {
+  width: 60%;
+  /* height: 50px; */
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 20px;
+  background: hsl(204, 8%, 88%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.textMessageEntrepreneur {
+  font-size: 8px;
+  padding: 0;
+  margin: 0;
+  color: hsl(276, 55%, 52%);
+  line-height: 0.5;
+}
+
+.cuteDogs {
+  display: flex;
+  gap: 5px;
+  flex-direction: row-reverse;
+  margin-top: 5px;
+}
+
+.dogImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.client {
+  width: 60%;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px 10px 5px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  left: 70px;
+}
+
+.textMessageClient {
+  font-size: 8px;
+  padding: 0;
+  margin: 0;
+  color: hsl(271, 15%, 43%);
+  line-height: 1;
+}
+
+.pricing {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(293, 60%, 63%) 20%,
+    hsl(264, 70%, 61%) 40%,
+    hsl(264, 70%, 61%) 100%
+  );
+  max-width: 80%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 10px 10px 10px 5px;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+  color: hsl(206, 6%, 79%);
+}
+
+.amount {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+
+.radio {
+  color: hsl(270, 7%, 64%);
+}
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* padding: 10px; */
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+}
+
+.textInput {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  background: white;
+  /* font-size: 16px; */
+  outline: none;
+}
+
+.sendIcon {
+  width: 45px;
+  height: 45px;
+  background: #6a0dad;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* first second and fifth message style will be the samed */
