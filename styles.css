@@ -1,12 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.firstsec {
+  position: relative;
+}
+
+.flexcon {
+  background: hsl(270, 20%, 96%);
 }
 
 .color {
-  height: 50vh;
+  height: 100vh;
   width: 80%;
+  max-width: 400px;
   color: hsl(293, 100%, 63%);
   border: hsl(293, 100%, 63%);
   background: linear-gradient(
@@ -15,19 +29,27 @@
     hsl(264, 80%, 61%) 40%,
     hsl(264, 80%, 61%) 100%
   );
-  border-radius: 0px 0px 200px 150px;
-  position: relative;
+  border-radius: 0px 0px 400px 200px;
   transform: translateX(-100px);
 
   /* for desktop i'll change the height and width to 80 and 30 respectively */
   /* on large screen id have to change the transform */
+
+  /* border radius 200 200 */
 }
 
 .mobilePhone {
   /* height: 50vh; */
-  max-width: 60%;
-  border-radius: 10px 10px 10px 10px;
+  /* max-width: 60%; */
+  width: 300px;
+  max-width: 300px;
+  border-radius: 20px;
   background: hsl(0, 0%, 100%);
+  padding: 10px;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index:1
 }
 
 .profile {
@@ -42,16 +64,16 @@
   position: relative;
 }
 
-/* .design {
-    width: 60%;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border-radius: 30px;
-    background: hsl(0, 0%, 100%);
-    position: absolute;
-    top:-10px;
-    left: 32.5px;
-} */
+.design {
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
 
 .flexprofile {
   display: flex;
@@ -116,6 +138,10 @@
 .message {
   padding: 10px 10px 10px 10px;
   background: hsl(270, 20%, 96%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .entrepreneur {
@@ -196,10 +222,10 @@
 
 .service {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  font-size: 8px;
+  font-size: 6px;
   color: hsl(206, 6%, 79%);
 }
 
@@ -212,37 +238,89 @@
   color: hsl(270, 7%, 64%);
 }
 .input {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  /* padding: 10px; */
-  background: #f2f2f2;
-  border-top: 1px solid #ccc;
+  width: 100%;
+  position: relative;
 }
 
 .textInput {
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 20px;
-  background: white;
-  /* font-size: 16px; */
+  border-radius: 15px;
+  /* padding: 5px; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
   outline: none;
+  border: none;
+}
+
+::placeholder {
+  font-size: 10px;
+  padding: 13px;
+  color: hsl(206, 6%, 79%);
 }
 
 .sendIcon {
-  width: 45px;
-  height: 45px;
-  background: #6a0dad;
-  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: hsl(271, 36%, 24%);
+  border-radius: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
 }
 
-/* first second and fifth message style will be the samed */
+.submit {
+  color: hsl(0, 0%, 100%);
+}
+
+.secondsec {
+  margin-top: 20px;
+}
+
+.text {
+  padding: 15px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* max-width: 700px; */
+}
+
+.heading {
+  font-size: 35px;
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 20px;
+}
+
+.sub {
+  font-size: 16px;
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+  .flexcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .color{
+    width: 100%;
+  }
+
+  .firstsec {
+    width: 50%;
+  }
+
+  .secondsec {
+    width: 40%;
+  }
+
+  .text {
+    text-align: left;
+  }
+}
