@@ -188,8 +188,33 @@
 // console.log(lastElement([1,2,4]))
 
 
-function capitalize(str) {
- return str[0].toUpperCase() + slice(1)
+// function capitalize(str) {
+//  return str[0].toUpperCase() + slice(1)
+// }
+
+// console.log(capitalize("samuel"))
+
+// function sumArray(arr) {
+//   let total = 0
+//   for(num of arr) {
+//       total = total + num
+//     }
+//     console.log(total)
+//     return total;
+// }
+
+// sumArray([1,2,3])
+
+const days = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun']
+
+function returnDay(num) {
+    if (num < 1 || num > 7) {
+      console.log(null)
+        return null
+    }
+
+    return days[num-1]
+    
 }
 
-console.log(capitalize("samuel"))
+returnDay(0)
