@@ -101,18 +101,18 @@
 //     }
 // }
 
-//command line to do list
+// command line to do list
 
-//steps
+// steps
 
-//initial prompt what would you like to do
-//if they type "new" initiate new todo
-//prompt user to enter a todo list
-//whatever to do add it to the array of list
+// initial prompt what would you like to do
+// if they type "new" initiate new todo
+// prompt user to enter a todo list
+// whatever to do add it to the array of list
 
 // command : list (iterate over all to do and list them out in terminal with their index)
 
-//command new : prompts user to enter a todo list
+// command new : prompts user to enter a todo list
 
 // command quit : to exit the game
 
@@ -132,11 +132,57 @@
 //   console.log(todo);
 // }
 
-
 // usersInput = prompt('what would you like to do')
 // while(usersInput !== 'quit') {
 //     userInput = prompt('what would you like to do')
 //     console.log(userInput)
-// } 
-    
+// }
+
 // console.log('you quite the app')
+
+// function neutralise(s1, s2) {
+
+//   let result = ''
+//   console.log(result)
+//   // Here be dragons!
+//   for (let i = 0; i < s1.length; i++) {
+//     if (s1[i] == s2[i]) {
+//       result += s1[i]
+
+//     }else [
+//       result += '0'
+//     ]
+//   }
+//   return result
+// }
+
+// neutralise('-+-', '++-')
+
+// function repeat(str, num) {
+//   let result = ''
+//   for (let i = 0; i < num; i++) {
+//     result = result + str
+//   }
+//   console.log(result);
+
+// }
+
+// repeat("samuel", 5)
+
+// Please write a function called lastElement which accepts a single array argument.  T
+// he function should return the last element of the array (without removing the element). 
+// If the array is empty, the function should return null.
+
+// lastElement([3,5,7]) //7
+// lastElement([1]) //1
+// lastElement([]) //null
+
+
+function lastElement(array) {
+  if (array.length === 0) {
+    return null;
+  }
+  return array[array.length - 1]
+}
+
+console.log(lastElement([1,2,4]))
