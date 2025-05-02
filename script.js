@@ -178,11 +178,18 @@
 // lastElement([]) //null
 
 
-function lastElement(array) {
-  if (array.length === 0) {
-    return null;
-  }
-  return array[array.length - 1]
+// function lastElement(array) {
+//   if (array.length === 0) {
+//     return null;
+//   }
+//   return array[array.length - 1]
+// }
+
+// console.log(lastElement([1,2,4]))
+
+
+function capitalize(str) {
+ return str[0].toUpperCase() + slice(1)
 }
 
-console.log(lastElement([1,2,4]))
+console.log(capitalize("samuel"))
