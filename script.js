@@ -170,13 +170,12 @@
 // repeat("samuel", 5)
 
 // Please write a function called lastElement which accepts a single array argument.  T
-// he function should return the last element of the array (without removing the element). 
+// he function should return the last element of the array (without removing the element).
 // If the array is empty, the function should return null.
 
 // lastElement([3,5,7]) //7
 // lastElement([1]) //1
 // lastElement([]) //null
-
 
 // function lastElement(array) {
 //   if (array.length === 0) {
@@ -186,7 +185,6 @@
 // }
 
 // console.log(lastElement([1,2,4]))
-
 
 // function capitalize(str) {
 //  return str[0].toUpperCase() + slice(1)
@@ -205,16 +203,31 @@
 
 // sumArray([1,2,3])
 
-const days = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun']
+// const days = ['mon', 'tue', 'wed', 'thur', 'fri', 'sat', 'sun']
 
-function returnDay(num) {
-    if (num < 1 || num > 7) {
-      console.log(null)
-        return null
+// function returnDay(num) {
+//     if (num < 1 || num > 7) {
+//       console.log(null)
+//         return null
+//     }
+
+//     return days[num-1]
+
+// }
+
+// returnDay(0)
+
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  for (let sheep of arrayOfSheep) {
+    if(sheep) {
+      count++
+      console.log(count)
     }
 
-    return days[num-1]
-    
+  }
+  console.log(count)
+
 }
 
-returnDay(0)
+countSheeps([false, false, null, undefined, false, false, true, true, false]);
