@@ -217,17 +217,58 @@
 
 // returnDay(0)
 
-function countSheeps(arrayOfSheep) {
-  let count = 0;
-  for (let sheep of arrayOfSheep) {
-    if(sheep) {
-      count++
-      console.log(count)
+// function countSheeps(arrayOfSheep) {
+//   let count = 0;
+//   for (let sheep of arrayOfSheep) {
+//     if(sheep) {
+//       count++
+//       console.log(count)
+//     }
+
+//   }
+//   console.log(count)
+
+// }
+
+// countSheeps([false, false, null, undefined, false, false, true, true, false]);
+
+// const square = {
+//   area: function (l) {
+//      return l ** 2
+//   },
+
+//   perimeter: function (l) {
+//       return l * 4;
+//   }
+// }
+
+// You have a list of 'on' and 'off'.
+// Every time you see 'toggle', you flip the light from on → off or off → on.
+
+// python
+// Copy
+// Edit
+// ['on', 'toggle', 'toggle', 'off', 'toggle']
+// # ➞ ['on', 'off', 'on', 'on', 'off']
+
+// write a function called toggle
+//we have to keep track of the toggle state with a variable. lets call it flick
+//if array is equal to toggle we want to change it to the opposite
+
+function flipSwitch(arr) {
+  let flip = "on";
+
+  let result = [];
+
+  for (let item of arr) {
+    if (item === "toggle") {
+      flip = (flip === "on") ? "off" : "on"
+    } else {
+      flip = item
     }
-
+    result.push(flip)
   }
-  console.log(count)
-
+  return result
 }
 
-countSheeps([false, false, null, undefined, false, false, true, true, false]);
+flipSwitch([["on", "toggle", "toggle", "off", "toggle"]]);
