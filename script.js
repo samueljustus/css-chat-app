@@ -255,20 +255,101 @@
 //we have to keep track of the toggle state with a variable. lets call it flick
 //if array is equal to toggle we want to change it to the opposite
 
-function flipSwitch(arr) {
-  let flip = "on";
 
-  let result = [];
+// function flipSwitch(arr) {
+//   let flip = "on";
 
-  for (let item of arr) {
-    if (item === "toggle") {
-      flip = (flip === "on") ? "off" : "on"
-    } else {
-      flip = item
-    }
-    result.push(flip)
-  }
-  return result
-}
+//   let result = [];
 
-flipSwitch([["on", "toggle", "toggle", "off", "toggle"]]);
+//   for (let item of arr) {
+//     if (item === "toggle") {
+//       flip = (flip === "on") ? "off" : "on"
+//     } else {
+//       flip = item
+//     }
+//     result.push(flip)
+//   }
+//   return result
+// }
+// flipSwitch([["on", "toggle", "toggle", "off", "toggle"]]);
+
+// for each accepts a call back function
+const data = [5, 10, 15, 20, 25];
+// Use .map(), .filter(), or .reduce() to:
+
+// Double each number in the array.
+
+// Remove any numbers greater than 15.
+
+// Find the sum of the remaining numbers.
+
+// Try it out, and let me know what you come up with!
+
+
+// function isPangram(str) {
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+//   //we loop through alphabet
+//   // then in the loop we check for every alphabet if the alphabet is in str if it is there return true else false 
+
+//   for (let i = 0; i < alphabet.length; i++) {
+//     if (str.indexOf(alphabet[i]) < 0) {
+//       return false;
+//     }
+//   }
+
+//   return true
+
+// }
+
+
+// const number = [1, 2, 3, 4, 5, 6, 6]
+
+// const [] = number
+
+// const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
+// 👉 Write code to:
+// 1️⃣ Flatten the array
+// 2️⃣ Sort it in descending order
+// 3️⃣ Reverse the sorted array (back to ascending)
+
+// const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
+// console.log(nestedNumbers)
+
+// const flattened = nestedNumbers.flat()
+
+// console.log(flattened)
+
+// const sorted = nestedNumbers.sort((a, b) => {
+//   return b - a
+// })
+
+// console.log(sorted.reverse())
+
+// console.log(sorted)
+
+// const tools = ['VSCode', 'Figma', 'GitHub'];
+
+// const boolean = tools.includes('Figma')
+
+// console.log(boolean);  // true
+// console.log(tools.includes('Notion')); // false
+
+// const developers = ['React', 'Vue', 'Svelte', 'Angular'];
+// 👉 Write code to:
+// 1️⃣ Check if 'Vue' exists
+// 2️⃣ Get index of 'Angular'
+// 3️⃣ Print each framework in uppercase (use forEach)
+
+const developers = ['React', 'Vue', 'Svelte', 'Angular'];
+
+ const doesVueExist = developers.includes('Vue')
+
+ const indexOfAngular = developers.indexOf('Angular')
+
+ const upperCase = developers.forEach(library => library.toUpperCase())
+
+ console.log(doesVueExist)
+ console.log(indexOfAngular)
+ console.log(upperCase)
+
