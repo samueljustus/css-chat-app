@@ -349,7 +349,61 @@ const developers = ['React', 'Vue', 'Svelte', 'Angular'];
 
  const upperCase = developers.forEach(library => library.toUpperCase())
 
- console.log(doesVueExist)
- console.log(indexOfAngular)
- console.log(upperCase)
+//  console.log(doesVueExist)
+//  console.log(indexOfAngular)
+//  console.log(upperCase)  // this returns undefined
 
+
+//  let stooge = {
+//     "first-name": "Jerome",
+//     "last-name": "Howard",
+//     middleName: "samuel"
+//    };
+
+
+//    let x = stooge
+
+//    x.nickName = 'Curly'
+//    let nick = stooge.nickName
+//    console.log(x.nickName)
+//    console.log(stooge)
+//    console.log(nick)
+
+//    for (let name in stooge) {
+//     console.log(stooge[name])
+//     if (typeof(name) == "string") {
+//         console.log(`${name} : Jerome`)
+//     }
+//     console.log('not a function')
+// }
+
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; //PLEASE DON'T CHANGE THIS LINE!
+
+// //YOUR CODE GOES HERE:
+
+// const span = ['R', 'A', 'I', 'N', 'B', 'O', 'W']
+
+// // const elements = document.querySelectorAll('span')
+
+// for(let i = 0; i < colors.length; i++) {
+//    span[i].style.color = colors[i]
+// }
+
+function random(num) {
+    return (Math.floor(Math.random() * (num + 1))) 
+    
+}
+
+console.log(random(255))
+
+// btn.addEventListener('click', () => {
+
+//     //update text content with the randNum ()
+//     // update background color wth randNum() 
+//     //probably the div.style.backgroundColor = randNum
+//     // if rand  Num is less thsn 20 
+    
+//     //change the text content to white color
+// })
+let randNum = `rgb ${random(255)}, ${random(255)}, ${random(255)}`
+console.log(randNum)
