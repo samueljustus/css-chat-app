@@ -277,13 +277,13 @@
 const data = [5, 10, 15, 20, 25];
 Use .map(), .filter(), or .reduce() to:
 
-Double each number in the array.
+// Double each number in the array.
 
-Remove any numbers greater than 15.
+// Remove any numbers greater than 15.
 
-Find the sum of the remaining numbers.
+// Find the sum of the remaining numbers.
 
-Try it out, and let me know what you come up with!
+// Try it out, and let me know what you come up with!
 
 
 function isPangram(str) {
@@ -308,10 +308,10 @@ const number = [1, 2, 3, 4, 5, 6, 6]
 const [] = number
 
 const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
-👉 Write code to:
-1️⃣ Flatten the array
-2️⃣ Sort it in descending order
-3️⃣ Reverse the sorted array (back to ascending)
+// 👉 Write code to:
+// 1️⃣ Flatten the array
+// 2️⃣ Sort it in descending order
+// 3️⃣ Reverse the sorted array (back to ascending)
 
 const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
 console.log(nestedNumbers)
@@ -404,6 +404,6 @@ console.log(random(255))
      // if rand  Num is less thsn 20 
     
      //change the text content to white color
- })
+//  })
 let randNum = `rgb ${random(255)}, ${random(255)}, ${random(255)}`
 console.log(randNum)
