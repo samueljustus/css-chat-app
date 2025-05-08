@@ -275,56 +275,56 @@
 
 // for each accepts a call back function
 const data = [5, 10, 15, 20, 25];
-// Use .map(), .filter(), or .reduce() to:
+Use .map(), .filter(), or .reduce() to:
 
-// Double each number in the array.
+Double each number in the array.
 
-// Remove any numbers greater than 15.
+Remove any numbers greater than 15.
 
-// Find the sum of the remaining numbers.
+Find the sum of the remaining numbers.
 
-// Try it out, and let me know what you come up with!
-
-
-// function isPangram(str) {
-//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-
-//   //we loop through alphabet
-//   // then in the loop we check for every alphabet if the alphabet is in str if it is there return true else false 
-
-//   for (let i = 0; i < alphabet.length; i++) {
-//     if (str.indexOf(alphabet[i]) < 0) {
-//       return false;
-//     }
-//   }
-
-//   return true
-
-// }
+Try it out, and let me know what you come up with!
 
 
-// const number = [1, 2, 3, 4, 5, 6, 6]
+function isPangram(str) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-// const [] = number
+  //we loop through alphabet
+  // then in the loop we check for every alphabet if the alphabet is in str if it is there return true else false 
 
-// const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
-// 👉 Write code to:
-// 1️⃣ Flatten the array
-// 2️⃣ Sort it in descending order
-// 3️⃣ Reverse the sorted array (back to ascending)
+  for (let i = 0; i < alphabet.length; i++) {
+    if (str.indexOf(alphabet[i]) < 0) {
+      return false;
+    }
+  }
 
-// const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
-// console.log(nestedNumbers)
+  return true
 
-// const flattened = nestedNumbers.flat()
+}
 
-// console.log(flattened)
 
-// const sorted = nestedNumbers.sort((a, b) => {
-//   return b - a
-// })
+const number = [1, 2, 3, 4, 5, 6, 6]
 
-// console.log(sorted.reverse())
+const [] = number
+
+const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
+👉 Write code to:
+1️⃣ Flatten the array
+2️⃣ Sort it in descending order
+3️⃣ Reverse the sorted array (back to ascending)
+
+const nestedNumbers = [ [1, 2], [3, 4], [5, 6] ];
+console.log(nestedNumbers)
+
+const flattened = nestedNumbers.flat()
+
+console.log(flattened)
+
+const sorted = nestedNumbers.sort((a, b) => {
+  return b - a
+})
+
+console.log(sorted.reverse())
 
 // console.log(sorted)
 
