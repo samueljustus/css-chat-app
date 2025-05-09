@@ -407,3 +407,27 @@ console.log(random(255))
 //  })
 let randNum = `rgb ${random(255)}, ${random(255)}, ${random(255)}`
 console.log(randNum)
+
+
+
+let randomNum = `rgb ${random(255)}, ${random(255)}, ${random(255)}`
+console.log(randNum) 
+
+const cartItem = [   // correct, easy to read  
+  {
+    id: 1,
+    name: "Product A",
+    price: 20,
+    quantity: 2
+  },
+];
+
+
+const things1 = [   // difficult to understand
+  { 
+    id: 1,
+    name: "Product A",
+    price: 20,
+    quantity: 2
+  },
+];
