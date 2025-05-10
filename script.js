@@ -431,3 +431,12 @@ const things1 = [   // difficult to understand
     quantity: 2
   },
 ];
+
+const things1 = [   // difficult to understand
+  { 
+    id: 1,
+    name: "Product A",
+    price: 20,
+    quantity: 2
+  },
+];
