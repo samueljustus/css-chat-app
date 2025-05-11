@@ -440,3 +440,20 @@ const things1 = [   // difficult to understand
     quantity: 2
   },
 ];
+
+
+//Javascript
+
+function greet(name) {  // argument
+
+    console.log(`hello ${name}`) 
+}
+greet('Justus');   // receives argument
+
+//React
+
+function Greeting(props) {  // parent pass props
+  return <h1>Hello, {props.name}</h1>;
+}
+
+<Greeting name="Justus" /> // child receives & reads prop
