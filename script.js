@@ -457,3 +457,15 @@ function Greeting(props) {  // parent pass props
 }
 
 <Greeting name="Justus" /> // child receives & reads prop
+
+function Array() {
+  const name = [1, 2, 3]
+  const [obj, setObj] = (name)
+
+  return (
+    <>
+    <li>learn reacrt</li>
+    </>
+  )
+}
+
